@@ -1,6 +1,6 @@
 ---
-canvas: "http://7decf506-967e-457a-8b79-b221d5d8047d"
-order: 1
+canvas: 'http://7decf506-967e-457a-8b79-b221d5d8047d'
+order: 0
 ---
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
