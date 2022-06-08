@@ -3,7 +3,7 @@ layout: null
 ---
 {% assign images = site.static_files | where_exp: 'item', 'item.path contains "/ignoreimages/"' | sort_natural | map: 'path' %}
 {% assign collections = site.pages | where_exp: 'item', 'item.dir == "/annonacollections/"' | sort_natural %}
-{% assign manifests = site.static_files | where_exp: 'item', 'item.dir == "/manifests/"' | map: 'url' %}
+{% assign manifests = site.pages | where_exp: 'item', 'item.dir == "/manifests/"' | map: 'url' %}
 {% assign customviews = site.pages | where_exp: 'item', 'item.dir contains "customviews"' | sort_natural %}
 {% assign manifestarray = '' | split: "" %}
 {% for manifest in manifests %}
