@@ -1,49 +1,65 @@
+---
+layout: none
+---
 {
-  "@context" : "http://iiif.io/api/presentation/2/context.json",
-  "@id" : "https://dnoneill.github.io/AnnonatateTest/manifests/testingimage.json",
-  "@type" : "sc:Manifest",
-  "label" : "testing",
-  "metadata" : [ ],
-  "description" : [ {
-    "@value" : "[Click to edit description]",
-    "@language" : "en"
-  } ],
-  "license" : "https://creativecommons.org/licenses/by/3.0/",
-  "attribution" : "[Click to edit attribution]",
-  "sequences" : [ {
-    "@id" : "http://f831ee1c-c391-4a8e-ab01-8997ff8a7838",
-    "@type" : "sc:Sequence",
-    "label" : [ {
-      "@value" : "Normal Sequence",
-      "@language" : "en"
-    } ],
-    "canvases" : [ {
-      "@id" : "http://7decf506-967e-457a-8b79-b221d5d8047d",
-      "@type" : "sc:Canvas",
-      "label" : "Empty canvas",
-      "height" : 1536,
-      "width" : 2048,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://262eb9e4-30c9-4f13-9d4e-32c41feccedf",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://dnoneill.github.io/AnnonatateTest/images/testingimage/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://dnoneill.github.io/AnnonatateTest/images/testingimage",
-            "profile" : "http://iiif.io/api/image/2/level0.json"
-          },
-          "height" : 1536,
-          "width" : 2048
-        },
-        "on" : "http://7decf506-967e-457a-8b79-b221d5d8047d"
-      } ],
-      "related" : ""
-    } ]
-  } ],
-  "structures" : [ ]
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "{{ '/' | absolute_url }}manifests/testingimage.json",
+  "@type": "sc:Manifest",
+  "label": "testing",
+  "description": [
+    {
+      "@value": "[Click to edit description]",
+      "@language": "en"
+    }
+  ],
+  "attribution": "[Click to edit attribution]",
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "sequences": [
+    {
+      "@id": "http://f831ee1c-c391-4a8e-ab01-8997ff8a7838",
+      "@type": "sc:Sequence",
+      "label": [
+        {
+          "@value": "Normal Sequence",
+          "@language": "en"
+        }
+      ],
+      "canvases": [
+        {
+          "@id": "http://7decf506-967e-457a-8b79-b221d5d8047d",
+          "@type": "sc:Canvas",
+          "label": "Empty canvas",
+          "height": 1536,
+          "width": 2048,
+          "images": [
+            {
+              "@id": "http://262eb9e4-30c9-4f13-9d4e-32c41feccedf",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "{{ '/' | absolute_url }}images/testingimage/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 1536,
+                "width": 2048,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "{{ '/' | absolute_url }}images/testingimage",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                }
+              },
+              "on": "http://7decf506-967e-457a-8b79-b221d5d8047d"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "{{ '/' | absolute_url }}annotations/7decf506-967e-457a-8b79-b221d5d8047d-list.json",
+              "@type": "sc:AnnotationList",
+              "label": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
