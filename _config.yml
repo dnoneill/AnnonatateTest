@@ -1,0 +1,5 @@
+baseurl: /AnnonatateTest
+collections:
+  annotations:
+    output: true
+    permalink: /annotations/:name
