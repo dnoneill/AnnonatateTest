@@ -41,7 +41,7 @@ def _annotations():
     collurl = re.search('https:\/\/(.*?)\/', collectionjson['@id'])
     for file in glob.glob('_site/annotations/*-list.json'):
         jsoncontents = json.load(open(file))
-        url = collurl.group(0).strip('/') + jsoncontents['id'].replace('.json', '') + '.json'
+        url = collurl.group(0).strip('/') + jsoncontents['id'].replace('-list.json', '') + '.json'
         filenames.append(url)
         filename = os.path.basename(file).replace('-list', '')
         with open(os.path.join('annotations/{}'.format(filename)), 'w') as f:
