@@ -1,0 +1,44 @@
+---
+canvas: "http://7decf506-967e-457a-8b79-b221d5d8047d"
+order: 1
+---
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@type": "oa:Annotation",
+    "motivation": [
+        "oa:commenting"
+    ],
+    "resource": [
+        {
+            "@type": "dctypes:Text",
+            "format": "text/html",
+            "chars": "<p>test uploaded manifest</p>"
+        }
+    ],
+    "on": [
+        {
+            "@type": "oa:SpecificResource",
+            "full": "http://7decf506-967e-457a-8b79-b221d5d8047d",
+            "selector": {
+                "@type": "oa:Choice",
+                "default": {
+                    "@type": "oa:FragmentSelector",
+                    "value": "xywh=449,260,529,441"
+                },
+                "item": {
+                    "@type": "oa:SvgSelector",
+                    "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M448.74344,259.89635h264.69802v0h264.69802v220.47537v220.47537h-264.69802h-264.69802v-220.47537z\"  id=\"rectangle_ff28f80b-715f-4a08-b102-f4fd72f14ab6\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                }
+            },
+            "within": {
+                "@id": "https://dnoneill.github.io/AnnonatateTest/manifests/testingimage.json",
+                "@type": "sc:Manifest"
+            }
+        }
+    ],
+    "oa:annotatedAt": "2022-06-08T21:22:18.481Z",
+    "@id": "1dd0c34d-76d1-4ccf-bbd9-afe61219162e.json",
+    "oa:annotatedBy": [
+        "dnoneill"
+    ]
+}
