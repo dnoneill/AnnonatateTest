@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "{{ '/' | absolute_url }}manifests/testingimage.json",
+  "@id": "https://dnoneill.github.io/AnnonatateTest/manifests/testingimage.json",
   "@type": "sc:Manifest",
   "label": "testing",
   "description": [
@@ -34,14 +34,14 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "{{ '/' | absolute_url }}images/testingimage/full/full/0/default.jpg",
+                "@id": "https://dnoneill.github.io/AnnonatateTest/images/testingimage/full/full/0/default.jpg",
                 "@type": "dctypes:Image",
                 "format": "image/jpeg",
                 "height": 1536,
                 "width": 2048,
                 "service": {
                   "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "{{ '/' | absolute_url }}images/testingimage",
+                  "@id": "https://dnoneill.github.io/AnnonatateTest/images/testingimage",
                   "profile": "http://iiif.io/api/image/2/level0.json"
                 }
               },
@@ -50,7 +50,7 @@
           ],
           "otherContent": [
             {
-              "@id": "{{ '/' | absolute_url }}annotations/7decf506-967e-457a-8b79-b221d5d8047d-list.json",
+              "@id": "https://dnoneill.github.io/AnnonatateTest/annotations/7decf506-967e-457a-8b79-b221d5d8047d-list.json",
               "@type": "sc:AnnotationList",
               "label": ""
             }
