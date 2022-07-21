@@ -1,0 +1,44 @@
+---
+canvas: "http://7decf506-967e-457a-8b79-b221d5d8047d"
+order: 5
+---
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@type": "oa:Annotation",
+    "motivation": [
+        "oa:commenting"
+    ],
+    "resource": [
+        {
+            "@type": "dctypes:Text",
+            "format": "text/html",
+            "chars": "<p>5 pin</p>"
+        }
+    ],
+    "on": [
+        {
+            "@type": "oa:SpecificResource",
+            "full": "http://7decf506-967e-457a-8b79-b221d5d8047d",
+            "selector": {
+                "@type": "oa:Choice",
+                "default": {
+                    "@type": "oa:FragmentSelector",
+                    "value": "xywh=1114,976,33,49"
+                },
+                "item": {
+                    "@type": "oa:SvgSelector",
+                    "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1130.46193,1025.14651c0,-10.91917 5.45959,-21.83835 16.37876,-32.75752c0,-9.04574 -7.33302,-16.37876 -16.37876,-16.37876c-9.04574,0 -16.37876,7.33302 -16.37876,16.37876c10.91917,10.91917 16.37876,21.83835 16.37876,32.75752z\"  id=\"pin_5f6f47b6-6861-4591-9524-6804561d8e5a\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                }
+            },
+            "within": {
+                "@id": "https://dnoneill.github.io/AnnonatateTest/manifests/testingimage.json",
+                "@type": "sc:Manifest"
+            }
+        }
+    ],
+    "oa:annotatedAt": "2022-07-21T20:30:06.883Z",
+    "@id": "7754f2ba-cbb8-47ef-a0e7-4854a58a50fb.json",
+    "oa:annotatedBy": [
+        "dnoneill"
+    ]
+}
