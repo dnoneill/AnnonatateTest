@@ -1,0 +1,44 @@
+---
+canvas: "http://7decf506-967e-457a-8b79-b221d5d8047d"
+order: 2
+---
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@type": "oa:Annotation",
+    "motivation": [
+        "oa:commenting"
+    ],
+    "resource": [
+        {
+            "@type": "dctypes:Text",
+            "format": "text/html",
+            "chars": "<p>test 2 circle</p>"
+        }
+    ],
+    "on": [
+        {
+            "@type": "oa:SpecificResource",
+            "full": "http://7decf506-967e-457a-8b79-b221d5d8047d",
+            "selector": {
+                "@type": "oa:Choice",
+                "default": {
+                    "@type": "oa:FragmentSelector",
+                    "value": "xywh=1152,238,462,428"
+                },
+                "item": {
+                    "@type": "oa:SvgSelector",
+                    "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1219.71175,300.22738c42.67986,-35.9095 102.88671,-62.6501 163.38533,-62.61815v0v0c60.49861,0.03195 113.20306,25.04734 163.38533,62.61815c50.18227,37.57081 69.68748,94.82146 67.67642,151.17358c-2.01106,56.35212 -25.5384,111.80569 -67.67642,151.17358c-42.13802,39.36789 -102.88671,62.6501 -163.38533,62.61815c-60.49861,-0.03195 -120.74715,-23.37805 -163.38533,-62.61815c-42.63818,-39.2401 -67.666,-94.37419 -67.67642,-151.17358c-0.01042,-56.79939 24.99656,-115.26408 67.67642,-151.17358z\"  id=\"ellipse_26dc6802-eeb1-48e8-b05b-3c6f2b9bc098\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                }
+            },
+            "within": {
+                "@id": "https://dnoneill.github.io/AnnonatateTest/manifests/testingimage.json",
+                "@type": "sc:Manifest"
+            }
+        }
+    ],
+    "oa:annotatedAt": "2022-07-21T20:29:35.301Z",
+    "@id": "e8a077ac-b3b3-4313-9e9b-f0aeb0962fd5.json",
+    "oa:annotatedBy": [
+        "dnoneill"
+    ]
+}
