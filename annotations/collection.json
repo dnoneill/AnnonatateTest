@@ -1,8 +1,8 @@
 {
     "@type": "sc:Layer",
     "otherContent": [
-        "https://dnoneill.github.io/AnnonatateTest/annotations/7decf506-967e-457a-8b79-b221d5d8047d.json",
-        "https://dnoneill.github.io/AnnonatateTest/annotations/f77764096aaf6ef68ce34253dbcf0823.json"
+        "https://dnoneill.github.io/AnnonatateTest/annotations/f77764096aaf6ef68ce34253dbcf0823-list.json",
+        "https://dnoneill.github.io/AnnonatateTest/annotations/7decf506-967e-457a-8b79-b221d5d8047d-list.json"
     ],
     "@id": "https://dnoneill.github.io/AnnonatateTest/annotations/collection.json",
     "label": "All annotations loaded in dnoneill/AnnonatateTest project",
