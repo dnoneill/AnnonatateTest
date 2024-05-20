@@ -6,6 +6,64 @@
   "type" : "Manifest",
   "@context" : "http://iiif.io/api/presentation/3/context.json",
   "items" : [ {
+    "width" : 1000,
+    "id" : "https://dnoneill.github.io/AnnonatateTest/images/Test/canvas/",
+    "label" : {
+      "none" : [ "Test" ]
+    },
+    "type" : "Canvas",
+    "items" : [ {
+      "id" : "https://dnoneill.github.io/AnnonatateTest/images/Test/AnnoPage/",
+      "type" : "AnnotationPage",
+      "items" : [ {
+        "motivation" : "Painting",
+        "id" : "https://dnoneill.github.io/AnnonatateTest/images/Test/annotation/",
+        "type" : "Annotation",
+        "body" : {
+          "service" : [ {
+            "tiles" : [ {
+              "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+              "width" : 1024,
+              "height" : 1024
+            } ],
+            "protocol" : "http://iiif.io/api/image",
+            "sizes" : [ {
+              "width" : 32,
+              "height" : 26
+            }, {
+              "width" : 63,
+              "height" : 52
+            }, {
+              "width" : 125,
+              "height" : 103
+            }, {
+              "width" : 250,
+              "height" : 205
+            }, {
+              "width" : 500,
+              "height" : 409
+            }, {
+              "width" : 1000,
+              "height" : 818
+            } ],
+            "profile" : "level0",
+            "width" : 1000,
+            "id" : "https://dnoneill.github.io/AnnonatateTest/images/Test",
+            "type" : "ImageService3",
+            "@context" : "http://iiif.io/api/image/3/context.json",
+            "height" : 818
+          } ],
+          "format" : "image/jpeg",
+          "width" : 1000,
+          "id" : "https://dnoneill.github.io/AnnonatateTest/images/Test/full/max/0/default.jpg",
+          "type" : "Image",
+          "height" : 818
+        },
+        "target" : "https://dnoneill.github.io/AnnonatateTest/images/Test/canvas/"
+      } ]
+    } ],
+    "height" : 818
+  }, {
     "width" : 2048,
     "id" : "https://dnoneill.github.io/AnnonatateTest/images/testingimage/canvas/",
     "label" : {
